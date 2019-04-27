@@ -43,7 +43,7 @@ module IP2SOC_Top(
          .instr(instr),             // instruction
          .readdata(cpu_data_in),    // data from meory/IO to cpu  
          .MemWriteo1(MemWrite),       // memory/IO(seg7) write signal
-         .PC(PC),                   // PC
+         .PCt(PC),                   // PC
          .aluouto(cpu_data_addr),    // address from cpu to memory/IO(seg7)
          .writedatao1(cpu_data_out),  // data from cpu to memory/IO
          .reg_sel(sw_i[4:0]),       // register selection
